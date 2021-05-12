@@ -6,14 +6,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dimension : MonoBehaviour {
-	public Material customSkybox;
+public class Dimension : MonoBehaviour // Portal을 이용한 Img, Vidoe 인터랙션에서 각자의 이미지를 보여주는 곳에 사용
+{
+	public Material customSkybox; // 
 
 	[HideInInspector]
-	public int layer;
+	public int layer; // layer를 인스벡터서 숨김
 
 	[Tooltip("This designates this dimension as the original dimension from which the experience will start.")]
-	public bool initialWorld = false;
+	public bool initialWorld = false; // 처음 보여줄 World 지정
 	[Tooltip("This forces the Dimension to only affect the layers during rendering (thus keeping things like raycasting intact). Warning: This will break the automatic physics adjustment that keeps you from hitting things in other dimensions.")]
 	public bool forceKeepInitialLayers = false;
 	
@@ -23,12 +24,12 @@ public class Dimension : MonoBehaviour {
 	[HideInInspector]
 	public Camera cam;
 
-	private Dictionary<int, int> layerSwitchedChildren;
+	private Dictionary<int, int> layerSwitchedChildren; // 딕션러니를 사용해 int, int형을 변수를 만듦
 
-    private bool mainCameraNeedsSetup = true;
+    private bool mainCameraNeedsSetup = true; // 카메라가 지정되어 있는지 확인
 
 	void Awake() {
-		connectedPortals = new List<Portal> ();
+		connectedPortals = new List<Portal> (); // List 초기화
 
 		layer = LayerManager.Instance ().CreateLayer (gameObject.name);	
 		LayerManager.definedDimensions.Add (this);
