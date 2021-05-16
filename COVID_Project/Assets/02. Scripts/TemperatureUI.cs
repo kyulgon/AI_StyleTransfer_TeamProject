@@ -13,23 +13,15 @@ public class TemperatureUI : MonoBehaviour
     private float temperature; // 온도 값
     private bool ShowTemp; // UI보여주는 상태
 
+
     void Start()
     {
         temperature = 0; // 온도 초기화
         ShowTemp = false;
 
         ShowTemperatureUI();
-
-
-
     }
 
-    void Update()
-    {
-
-       
-       
-    }
 
 
     void ShowTemperatureUI()
@@ -42,12 +34,11 @@ public class TemperatureUI : MonoBehaviour
         temperatureTxt.text = System.Math.Round((float)temperature, 1) + " ℃ 입니다";
 
         Invoke("Wait3Sec", 3f);
-
     }      
 
+   
     void Wait3Sec()
     {
         showTemperature.SetActive(false);
     }
-
 }
