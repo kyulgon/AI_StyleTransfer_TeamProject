@@ -6,11 +6,15 @@ TagManager:
   tags:
   - FirstPos
   - SecPos
+  - PUNCH
+  - Monster
+  - Monster2
+  - Monster3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Mask
   - Water
   - UI
   - 

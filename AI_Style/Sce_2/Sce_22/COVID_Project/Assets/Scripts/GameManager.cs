@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
     {
         if(!isGameOver)
         {
-            hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController3>().hp;
-            scoreText.text = "Score :" + (int)score;
+            //hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController3>().hp;
+            //scoreText.text = "Score :" + (int)score;
         }
     }
     public void GetScored(int value)
