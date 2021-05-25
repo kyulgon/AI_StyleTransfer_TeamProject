@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit.UI;
 
 public enum HandState { NONE = 0, RIGHT, LEFT };
 
-public class CustomController3 : MonoBehaviour
+public class CustomController : MonoBehaviour
 {
     public InputDeviceCharacteristics characteristics;
     [SerializeField]

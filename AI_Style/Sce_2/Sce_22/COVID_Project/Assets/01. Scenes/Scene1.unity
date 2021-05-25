@@ -1003,6 +1003,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e804011a30b459b4990c237604a9c8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerGameObject: {fileID: 0}
+  hpText: {fileID: 0}
+  scoreText: {fileID: 0}
+  isGameOver: 0
 --- !u!143 &368786989
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1544,7 +1548,8 @@ PrefabInstance:
       propertyPath: m_Direction
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8334021852957331094, guid: 16e7451e81164bc4caac73768f16ceb6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 16e7451e81164bc4caac73768f16ceb6, type: 3}
 --- !u!1 &632598612 stripped
 GameObject:
@@ -2461,6 +2466,8 @@ MonoBehaviour:
   controllerModels: []
   renderController: 0
   handModel: {fileID: 1888267304523964373, guid: 9c9432b748db5534982628ff397dd458, type: 3}
+  HandGun: {fileID: 0}
+  currentHand: 0
 --- !u!1 &1133984340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,6 +3372,8 @@ MonoBehaviour:
   controllerModels: []
   renderController: 0
   handModel: {fileID: 1096003989235227144, guid: a916d738cadb40740ae4da3eddbd40f4, type: 3}
+  HandGun: {fileID: 0}
+  currentHand: 0
 --- !u!1 &2085824854
 GameObject:
   m_ObjectHideFlags: 0

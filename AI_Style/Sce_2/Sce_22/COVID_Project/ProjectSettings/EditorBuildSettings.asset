@@ -13,7 +13,8 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/01. Scenes/Scene3.unity
-    guid: 53e07ab79c0b8c14f9d8c2781d32b8e9
+    guid: 130fcdd8eed0b6340879770966eaa53c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a28cd1fa250dd5b419eab0a726b3969e, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: c7819946ae5602b47a1144965f36c3ee, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8b6c5335ba1256d4086676304e45c7f2, type: 2}

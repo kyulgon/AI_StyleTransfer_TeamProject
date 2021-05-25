@@ -27,7 +27,7 @@ public class BulletSpawner : MonoBehaviour
     {
         timeAffterSpawn = 0f;
         spwanRate = Random.Range(spwanRateMin, spwanRateMax);
-        target = FindObjectOfType<PlayerController>().transform;
+        target = FindObjectOfType<PlayerController3>().transform;
 
         fireAudio = GetComponent<AudioSource>();
         monsterCtrl = GetComponent<MonsterCtrl>();
@@ -37,7 +37,7 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(monsterCtrl.IsDie);
+        // Debug.Log(monsterCtrl.IsDie);
         if(monsterCtrl.IsDie == false)
         {
             timeAffterSpawn += Time.deltaTime;
